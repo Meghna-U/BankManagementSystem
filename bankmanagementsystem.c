@@ -5,7 +5,6 @@
 int i,j;
 int main_exit;
 void menu();
-int atm();
 void close();
 struct date{
     int month,day,year;
@@ -502,7 +501,7 @@ void menu(void)
     system("color 7");
     printf("\n\n\t\t\t       BANKING MANAGEMENT SYSTEM");
     printf("\n\n\n\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2 WELCOME TO THE MAIN MENU \xB2\xB2\xB2\xB2\xB2\xB2\xB2");
-    printf("\n\n\t\t[1] Create a new account\n\t\t[2] Update information of existing account\n\t\t[3] Transactions\n\t\t[4] Check the details of existing account\n\t\t[5] Remove existing account\n\t\t[6] View customer's list\n\t\t[7] ATM Feature\n\t\t[8] Exit\n\n\n\t\t Enter your choice:");
+    printf("\n\n\t\t1. Create a new account\n\t\t2. Update information of existing account\n\t\t3. Transactions\n\t\t4. Check the details of existing account\n\t\t5. Remove existing account\n\t\t6. View customer's list\n\t\t7. Exit\n\n\n\t\t Enter your choice:");
     scanf("%d",&choice);
 
     system("cls");
@@ -520,9 +519,7 @@ void menu(void)
         break;
         case 6:view_list();
         break;
-        case 7:atm();
-        break;
-        case 8:close();
+        case 7:close();
         break;
     }
 
@@ -623,8 +620,7 @@ int login(void)
 }
 
 
-//Main Code
-	    //Local Declarations
+
     int option;
     float balance = 15000.00;
     int choose;
